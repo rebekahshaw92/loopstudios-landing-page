@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+
+$fontAlata: 'Alata', sans-serif;
+$fontJosefin: 'Josefin Sans', sans-serif;
+$darkGray: hsl(0, 0%, 55%);
+$white: hsl(0, 0%, 100%);
+$black: hsl(0, 0%, 0%);
+
+.navbar-nav li a {
+    color: $white !important;
+    font-weight: 300;
+    letter-spacing: 0.16rem;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    font-family: $fontJosefin;
+    text-transform: uppercase;
+    @include media-breakpoint-up(lg) {
+        text-transform: capitalize;
+    }
+  
+    }
+
+    .nav-link:hover:after{
+        content: "";
+        display:block;
+        margin-left: 10%;
+        margin-top: 2%;
+        width: 30px;
+        border-bottom:3px solid $white;
+        @include media-breakpoint-up(lg) {
+            width:40px;
+            margin: 0 auto;
+        }
+    }
+
+    .navbar-item {
+        margin-left: 10% !important;
+        &:first-child {
+            margin-top: 30% !important;
+        }
+    }
+
+    .title {
+        color: $white;
+        padding-top: 1.6rem;
+        padding-left: 1.6rem;
+        padding-right: 1.6rem;
+        font-family: $fontJosefin;
+        font-size: 48px;
+        margin: 49% auto 40%;
+        padding: 7%;
+        letter-spacing: 2px;
+        margin: auto;
+        padding: auto;
+        border: 2px solid $white;
+        margin-top: 200px;
+        line-height: 1;
+        @include media-breakpoint-up(lg) {
+            width: 50%;
+            margin: 0;
+            margin-top: 10%;
+            padding: 5%;
+        }
+        
+    }
+
+    .leaderTitle, .creationsTitle {
+        font-family: $fontJosefin;
+        font-size: 42px;
+        margin: 5%;
+    }
+
+    .leaderTitle {
+        @include media-breakpoint-up(lg) {
+            margin: 0;
+        }
+    }
+
+    .leaderText {
+        font-family: $fontJosefin;
+        font-size: 20px;
+        margin: 5%;
+        margin-left: 10%;
+        margin-right: 10%;
+        @include media-breakpoint-up(lg) {
+            font-size: 15px;
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
+
+    .creationsTitle {
+        margin-top: 25%;
+        @include media-breakpoint-up(lg) {
+            display: inline-block;
+            margin-top: 60% !important;
+            font-size: 32px;
+        }
+    }
+
+    .earthTitle {
+        color: $white;
+        font-family: $fontJosefin;
+        font-size: 30px;
+       //font-size: 2.35rem;
+        padding-left: 10%;
+        padding-top: 20%;
+        line-height: 1;
+        width: 200px;
+        height: 100%;
+        @include media-breakpoint-up(lg) {
+            padding-top: 115%;
+        }
+
+    }
+
+    .footerMenu {
+        li {
+            list-style: none;
+            font-size: 24px;
+            padding-top: 10%;
+            @include media-breakpoint-up(lg) {
+                font-size: 15px;
+                display: inline-block;
+                padding: 1%;
+                padding-top: 2%;
+                &:first-child {
+                    padding-left: 3%;
+                }
+            }
+            a {
+                color: $white;
+                font-family: $fontAlata;
+                text-decoration: none;
+                &:hover:after{
+                    content: "";
+                    display:block;
+                    margin: 0 auto;
+                    width: 40px;
+                    border-bottom:3px solid $white;
+            }
+        }
+    }
+}
+
+    .footerText {
+        color: $darkGray;
+        font-family: $fontAlata;
+        font-size: 20px;
+        @include media-breakpoint-up(lg) {
+            font-size: 15px;
+            margin: 0;
+        }
+    }
+
+    .footerTextDesktop {
+        display: none;
+        @include media-breakpoint-up(lg) {
+            display: block;
+            margin-top: 3%;
+            margin-right: 2%;
+        }
+    }
+
+    .footerTextMobile {
+        @include media-breakpoint-up(lg) {
+            display: none;
+        }
+    }

@@ -1,0 +1,167 @@
+$black: hsl(0, 0%, 0%);
+$white: hsl(0, 0%, 100%);
+
+
+.creations {
+    height: 2000px;
+    @include media-breakpoint-up(lg) {
+        margin-right: 10%;
+    }
+}
+
+.interactiveMobile {
+    margin: 10%;
+    margin-top: 30%;
+    width: 90%;
+    @include media-breakpoint-up(lg) {
+        display: none !important;
+    }
+}
+
+
+.interactiveDesktop {
+   display: none;
+    @include media-breakpoint-up(lg) {
+        display: inline-block;
+        width: 50%;
+        margin-top: 10%;
+        margin-left: 5%;
+        position: absolute;
+    }
+}
+
+.mainLeaderText {
+    @include media-breakpoint-up(lg){
+//    position: relative;
+width: 40%;
+padding: 4%;
+margin-top: 75%;
+position: absolute;
+height: 50%;
+right: 10%;
+top: 10%;
+bottom: 8%;
+background-color: $white;
+    }
+}
+
+.earth {
+   background-image: linear-gradient(to left, transparent, rgba(0, 0, 0, 0.6)), url("../images/mobile/image-deep-earth.jpg");
+   @include media-breakpoint-up(lg) {
+    background-image: linear-gradient(to left, transparent, rgba(0, 0, 0, 0.6)), url("../images/desktop/image-deep-earth.jpg");
+   }
+}
+
+.night {
+    background-image: linear-gradient(to left, transparent, rgba(0, 0, 0, 0.6)), url("../images/mobile/image-night-arcade.jpg");
+    @include media-breakpoint-up(lg) {
+        background-image: linear-gradient(to left, transparent, rgba(0, 0, 0, 0.6)), url("../images/desktop/image-night-arcade.jpg");
+    }
+}
+
+.soccer {
+    background-image: linear-gradient(to left, transparent, rgba(0, 0, 0, 0.6)), url("../images/mobile/image-soccer-team.jpg");
+    @include media-breakpoint-up(lg) {
+        background-image: linear-gradient(to left, transparent, rgba(0, 0, 0, 0.6)), url("../images/desktop/image-soccer-team.jpg");
+    }
+}
+
+.grid {
+    background-image: linear-gradient(to left, transparent, rgba(0, 0, 0, 0.6)), url("../images/mobile/image-grid.jpg");
+    @include media-breakpoint-up(lg) {
+        background-image: linear-gradient(to left, transparent, rgba(0, 0, 0, 0.6)), url("../images/desktop/image-grid.jpg");
+    }
+}
+
+.above {
+    background-image: linear-gradient(to left, transparent, rgba(0, 0, 0, 0.6)), url("../images/mobile/image-from-above.jpg");
+    @include media-breakpoint-up(lg) {
+        background-image: linear-gradient(to left, transparent, rgba(0, 0, 0, 0.6)), url("../images/desktop/image-from-above.jpg");
+    }
+}
+
+
+.pocket {
+    background-image: linear-gradient(to left, transparent, rgba(0, 0, 0, 0.6)), url("../images/mobile/image-pocket-borealis.jpg");
+    @include media-breakpoint-up(lg) {
+        background-image: linear-gradient(to left, transparent, rgba(0, 0, 0, 0.6)), url("../images/desktop/image-pocket-borealis.jpg");
+    }
+}
+
+.curiosity {
+    background-image: linear-gradient(to left, transparent, rgba(0, 0, 0, 0.6)), url("../images/mobile/image-curiosity.jpg");
+    @include media-breakpoint-up(lg) {
+        background-image: linear-gradient(to left, transparent, rgba(0, 0, 0, 0.6)), url("../images/desktop/image-curiosity.jpg");
+    }
+}
+
+.make {
+    background-image: linear-gradient(to left, transparent, rgba(0, 0, 0, 0.6)), url("../images/mobile/image-fisheye.jpg");
+    @include media-breakpoint-up(lg) {
+        background-image: linear-gradient(to left, transparent, rgba(0, 0, 0, 0.6)), url("../images/desktop/image-fisheye.jpg");
+    }
+}
+
+
+
+.creationsMain {
+    height: 170px;
+    width: 90%;
+    margin: 5%;
+    background-size: cover;
+    position: relative;
+    &:hover .earthTitle {
+        background-color: rgba(255, 255, 255, 0.7);
+        color: black;
+        width: 100%;
+    }
+    @include media-breakpoint-up(lg) {
+        height: 450px;
+        width: 100%;
+        margin: 10%;
+        margin-top: 5%;
+        &:first-child {
+            margin-left: 20%;
+        }
+    }
+}
+
+.seeAllMobile {
+    margin: 10%;
+    border-color: $black;
+    letter-spacing: 4px;
+    color: $black;
+    width: 170px;
+    height: 50px;
+    font-size: 20px;
+    background-color: transparent;
+    @include media-breakpoint-up(lg) {
+        display: none !important;
+    }
+    &:hover {
+        background-color: $black;
+        color: $white;
+    }
+}
+
+.seeAllDesktop {
+    display: none;
+    @include media-breakpoint-up(lg) {
+       display: inline;
+       // margin-top: -8%;
+       //float: right;
+       margin: -5%;
+       margin-left: 50%;
+        border-color: $black;
+        letter-spacing: 4px;
+        color: $black;
+        width: 170px;
+        height: 50px;
+        font-size: 20px;
+        background-color: transparent;
+    }
+    &:hover {
+        background-color: $black;
+        color: $white;
+    }
+}
