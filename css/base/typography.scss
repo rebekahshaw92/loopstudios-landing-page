@@ -62,10 +62,10 @@ $black: hsl(0, 0%, 0%);
             margin-top: 10%;
             padding: 5%;
         }
-        @include media-breakpoint-up(xxl){
-           margin-left: 15%;
-            width: 40%;
-        }
+        // @include media-breakpoint-up(xxl){
+        //    margin-left: 15%;
+        //     width: 40%;
+        // }
         
     }
 

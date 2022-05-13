@@ -28,9 +28,9 @@ $white: hsl(0, 0%, 100%);
         margin-left: 5%;
         position: absolute;
     }
-    @include media-breakpoint-up(xxl) {
-        margin-left: 20%;
-    }
+    // @include media-breakpoint-up(xxl) {
+    //     margin-left: 20%;
+    // }
 }
 
 .mainLeaderText {
