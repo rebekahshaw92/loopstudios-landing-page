@@ -5115,7 +5115,7 @@
 }
 @media (min-width: 1400px) {
   .title {
-    padding-left: 20%;
+    margin: 59% auto 50%;
     width: 40%;
   }
 }
