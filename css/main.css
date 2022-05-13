@@ -5293,6 +5293,11 @@
     position: absolute;
   }
 }
+@media (min-width: 1400px) {
+  .interactiveDesktop {
+    margin-left: 12%;
+  }
+}
 
 @media (min-width: 992px) {
   .mainLeaderText {
