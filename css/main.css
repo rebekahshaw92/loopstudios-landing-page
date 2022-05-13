@@ -5113,6 +5113,11 @@
     padding: 5%;
   }
 }
+@media (min-width: 1200px) {
+  .title {
+    padding-left: 10%;
+  }
+}
 
 .leaderTitle, .creationsTitle {
   font-family: "Josefin Sans", sans-serif;
