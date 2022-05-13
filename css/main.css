@@ -5263,6 +5263,11 @@
     margin-right: 10%;
   }
 }
+@media (min-width: 1400px) {
+  .creations {
+    height: 2300px;
+  }
+}
 
 .interactiveMobile {
   margin: 10%;
@@ -5395,6 +5400,11 @@
   }
   .creationsMain:first-child {
     margin-left: 20%;
+  }
+}
+@media (min-width: 1400px) {
+  .creationsMain {
+    height: 550px;
   }
 }
 

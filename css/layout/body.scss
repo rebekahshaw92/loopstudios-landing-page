@@ -7,6 +7,9 @@ $white: hsl(0, 0%, 100%);
     @include media-breakpoint-up(lg) {
         margin-right: 10%;
     }
+    @include media-breakpoint-up(xxl){
+        height: 2300px;
+    }
 }
 
 .interactiveMobile {
@@ -28,23 +31,19 @@ $white: hsl(0, 0%, 100%);
         margin-left: 5%;
         position: absolute;
     }
-    // @include media-breakpoint-up(xxl) {
-    //     margin-left: 20%;
-    // }
 }
 
 .mainLeaderText {
     @include media-breakpoint-up(lg){
-//    position: relative;
-width: 40%;
-padding: 4%;
-margin-top: 75%;
-position: absolute;
-height: 50%;
-right: 10%;
-top: 10%;
-bottom: 8%;
-background-color: $white;
+    width: 40%;
+    padding: 4%;
+    margin-top: 75%;
+    position: absolute;
+    height: 50%;
+    right: 10%;
+    top: 10%;
+    bottom: 8%;
+    background-color: $white;
     }
 }
 
@@ -123,9 +122,14 @@ background-color: $white;
         width: 100%;
         margin: 10%;
         margin-top: 5%;
+
         &:first-child {
             margin-left: 20%;
         }
+    }
+    @include media-breakpoint-up(xxl) {
+        height: 550px;
+
     }
 }
 
@@ -151,8 +155,6 @@ background-color: $white;
     display: none;
     @include media-breakpoint-up(lg) {
        display: inline;
-       // margin-top: -8%;
-       //float: right;
        margin: -5%;
        margin-left: 50%;
         border-color: $black;
