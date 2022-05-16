@@ -7,9 +7,6 @@ $white: hsl(0, 0%, 100%);
     @include media-breakpoint-up(lg) {
         margin-right: 10%;
     }
-    @include media-breakpoint-up(xxl){
-        height: 2600px;
-    }
 }
 
 .interactiveMobile {
@@ -126,10 +123,6 @@ $white: hsl(0, 0%, 100%);
         &:first-child {
             margin-left: 20%;
         }
-    }
-    @include media-breakpoint-up(xxl) {
-        height: 600px;
-
     }
 }
 
